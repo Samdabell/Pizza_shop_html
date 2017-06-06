@@ -1,0 +1,7 @@
+<p>Customer Name: <%= @customer.name() %></p>
+
+<p><a href="/pizza/customers/<%= @customer.id %>/edit">Edit Customer</a></p>
+
+<form action="/pizza/customers/<%= @customer.id %>/delete" method="post">
+  <input type="submit" value="Delete Customer">
+</form>

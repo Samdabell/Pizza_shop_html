@@ -1,0 +1,7 @@
+<form action="/pizza/customers/<%= @customer.id %>" method="post">
+  
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" value="<%= @customer.name() %>">
+
+  <input type="submit" value="Edit Customer">
+</form>
